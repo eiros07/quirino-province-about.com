@@ -1,0 +1,746 @@
+.center-container {
+
+position: absolute; 
+top: 50%; 
+transform: translate(-50%, -50%);
+left: 50%;
+
+}
+
+.container {
+
+position: relative;
+display: inline-block;
+padding: 0 40px;
+cursor: pointer;
+}
+.text {
+
+font-size: 100px;
+text-transform: uppercase; 
+font-weight: 900;
+position: relative; color:#5cdb95;
+}
+
+
+
+
+
+make a code where   each letters of the 2 words quirino province has an animation when you point the curser that has already have a html and css which is this:                                                                                                 HTML:                                                                                                                                                                                                               <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta char="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>https://www.quirinoprovinceabout.com.ph</title>
+  <link rel="stylesheet" href="home.css">
+</head>
+
+<!-- NAVBAR -->
+<body>
+  <nav class="navbar">
+    <div class="brand">
+      <a href="#"><h2><span>Q</span>UI <span>R</span>INO</h2></a>
+    </div>
+    
+    <ul>
+      <li><a href="#home">HOME</a></li>
+      <li><a href="#history">HISTORY</a></li>
+      <li><a href="#tourist-spot">TOURIST SPOT</a></li>
+      <li><a href="#people">PEOPLE</a></li>
+      <li><a href="environtment">ENVIRONMENT</a></li>
+      <li><a href="#CONTACTS">CONTACTS</a></li>
+    </ul>
+    
+  </nav>
+  <!-- END OF NAVBAR -->
+
+  <!-- HOME -->
+  <section id="home">
+    <div class="items-contain">
+      <div class="oip">
+        <img src="OIP.png" class="logo">
+      </div>
+        <div class="title-blog">
+          <div>
+            <h1 class="title-page">QUIRINO <br> PROVINCE</h1>
+            <b><p>The heartland 
+            forest of  cagayan valley</p></b>
+          </div>
+          
+          </div> 
+        </div>
+        <div class="carousel">
+          <div class="carousel-inner">
+            <div class="session">
+              <img src="images (3).jpeg" alt="Session 1"> 
+            </div>
+            <div class="session">
+              <img src="images.jpeg" alt="Session 2">
+            </div>
+            <div class="session">
+              <img src="images (1).jpeg" alt="Session 3">
+            </div>
+            <!-- Add more session elements as needed -->
+          </div>
+      </div>
+      </div>
+    </div>
+  </section>
+   <!-- END OF HOME -->                                                                                                                                                                                <!-- FOOTER -->
+  <section id="footer">
+    <div class="footer2">
+      <div class="brand">
+        <h1><span>A</span>GUI <span>N</span>ALDO</h1>
+      </div>
+      <h2>THANKS FOR VISITING OUR WEBSITE</h2>
+      <p>_____________________________________________________________________________________________________________________________________</p>
+      <p>Copyright © 2023 . All rights reserved</p>
+    </div>
+  </section>
+  <!-- END OF FOOTER-->                                                                                                                                                                      </body>                                                                                                                                                                                                                                                                                                                                                                                                                                              
+
+
+
+
+
+CSS:
+
+*{
+    margin: 0;
+    padding: 0; 
+    
+}
+.heading{
+    
+    font-size: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    transform: scale(1,1.3);
+}
+/* Navbar */
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    height: 50px;
+    align-items: center;
+    background-color:rgba(0, 0, 0, 0.404) ;
+    position: relative;
+    top: 0;
+    position: sticky;
+    top: 0;
+    
+}
+.navbar::before{
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin-right: 5em;
+}
+.navbar ul li{
+    font-size: 1.1rem;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+
+}
+.navbar ul li a:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px white;
+}
+.brand a {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+    margin-right: 22em;
+  }
+
+/* Home Section */
+#home{
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    justify-content: center;   
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(255, 255, 255);
+    
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 30%;
+    background:url('91375416_962584594156097_1416217757359276032_n.png');
+    background-position: right;
+    background-size: cover;
+    height: 750px;
+    width: 70%;
+    z-index: -1;
+    
+}
+
+.title-page{
+    
+    font-size: 5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+    transform: scale(1,1.3);
+    transition: 0.5s; /* Animation duration */
+    cursor: pointer; /* Change mouse pointer to indicate clickable area */
+}
+.title-page:hover{
+    background-color: #8bc34a; /* Greenish color on hover */
+    color: black;
+    border-radius: 15px;
+}
+.title-blog{
+    margin-top: 2em;
+}
+.title-blog p{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    margin-top: 28px;
+    text-align: left;
+    margin-left: 1em;
+}
+
+.items-contain{
+  display: flex;
+}
+.title-blog{
+    text-align: left;
+    margin-left: 0;
+    
+}
+.oip{
+    float: left;
+    margin-left: 10px;
+}
+.oip img{
+    height: 15em;    
+}
+.carousel {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    margin-left: 30px;
+
+  }
+  
+  .carousel-inner {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .session {
+    height: 300px;
+    width: 180px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .session:hover {
+    transform: scale(1.1);
+  }
+  
+  .session img {
+    width: 100%;
+    height: 297px;
+    border-radius: 8px;
+  }
+  
+  .session h3 {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  
+  .session p {
+    margin-top: 5px;
+    font-size: 14px;
+  }
+  /* Footer */
+#footer {
+	background-image: linear-gradient(60deg, #000000 0%, #000000 100%);
+}
+#footer .footer2 {
+	min-height: 200px;
+	padding-top: 50px;
+	padding-bottom: 10px;
+    margin: auto;
+}
+#footer h2 {
+	color: rgb(255, 255, 255);
+	font-weight: 500;
+	font-size: 1.8rem;
+	letter-spacing: 0.1rem;
+    margin: auto;
+    text-align: center;
+}
+
+#footer p {
+	color: rgb(251, 248, 248);
+	font-size: 1.3rem;
+    margin: auto;
+    text-align: center;
+}
+.brand h1{
+    color: white;
+    font-weight: 1000;
+	font-size: 1.8rem;
+	letter-spacing: 0.1rem;
+	margin-top: 5px;
+	margin-bottom: 20px;
+    text-align: center;
+}
+.brand span{
+    color: orange;
+}
+
+
+/* End Footer */
+
+
+_____________________________________________________________________________________________________________________________________
+html:
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta char="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>https://www.quirinoprovinceabout.com.ph</title>
+  <link rel="stylesheet" href="home.css">
+</head>
+
+<!-- NAVBAR -->
+<body>
+  <nav class="navbar">
+    <div class="brand">
+      <a href="#"><h2><span>Q</span>UI <span>R</span>INO</h2></a>
+    </div>
+    
+    <ul>
+      <li><a href="#home">HOME</a></li>
+      <li><a href="#history-title">HISTORY</a></li>
+      <li><a href="#tourist-spot">TOURIST SPOT</a></li>
+      <li><a href="#people">PEOPLE</a></li>
+      <li><a href="environtment">ENVIRONMENT</a></li>
+      <li><a href="#CONTACTS">CONTACTS</a></li>
+    </ul>
+    
+  </nav>
+  <!-- END OF NAVBAR -->
+
+  <!-- HOME -->
+  <section id="home">
+    <div class="items-contain">
+      <div class="oip">
+        <img src="OIP.png" class="logo">
+      </div>
+        <div class="title-blog">
+          <div>
+            <h1 class="title-page">QUIRINO <br> PROVINCE</h1>
+            <b><p>The heartland 
+            forest of  cagayan valley</p></b>
+          </div>
+          
+          </div> 
+        </div>
+        <div class="carousel">
+          <div class="carousel-inner">
+            <div class="session">
+              <img src="images (3).jpeg" alt="Session 1"> 
+            </div>
+            <div class="session">
+              <img src="images.jpeg" alt="Session 2">
+            </div>
+            <div class="session">
+              <img src="images (1).jpeg" alt="Session 3">
+            </div>
+            <!-- Add more session elements as needed -->
+          </div>
+      </div>
+      </div>
+    </div>
+  </section>
+   <!-- END OF HOME -->
+  <section id="none">
+  </section>
+   
+  <!-- HISTORY -->
+  <section id="history-title">
+    <div class="history">
+      <h1 class="history-text">HISTORY</h1>
+    </div>
+    <section id="none">
+    </section>
+  </section>
+  <section id="history">
+    <div class="pic">
+      <div class="columns">
+        <h2>Origins:</h2>
+        <p>  In the old days, the first 
+          name of this village was 
+          Rizaluna Este. The captain 
+          was called captain del Baryo.
+          There are two classrooms
+          made of bamboo and the roof
+          is thatched.
+          wid. When they have a
+          meeting, they go to Rizaluna
+          west. Because they stay
+          away when there is an
+          activity or meeting. 
+          they divided Rizaluna, 
+          named Rizaluna Este
+          Barangay Aguinaldo. 
+          When the population 
+          of the said village increased, 
+          they built two more classrooms 
+          called Rizaluna Este Primary 
+          School. Former farms that are
+          now farmed then there was 
+          irrigation. Perhaps, with the 
+          help of our Government or the 
+          higher governments under the 
+          leadership of our beloved Town 
+          Mayor, the Honorable Laurencio P.
+          Zuniega who provided financial 
+          assistance for the transformation 
+          of our village. There was also a 
+          Barangay Police in our village 
+          patrolling at night. When two 
+          more classrooms were added
+          of our village, our Principal 
+          requested and with the help of 
+          our kind, brave barangay captain, 
+          the name of our school was changed 
+          and it is AGUINALDO ELEMENTARY
+          SCHOOL. There are many changes in 
+          our barangay until now.
+        </p>
+      </div>
+      <img src="logo.png" alt="" style="border: 4px solid black;">
+    </div>
+  </section>
+  <!-- END OF HISTORY -->
+
+  
+
+  <!-- FOOTER -->
+  <section id="footer">
+    <div class="footer2">
+      <div class="brand">
+        <h1><span>A</span>GUI <span>N</span>ALDO</h1>
+      </div>
+      <h2>THANKS FOR VISITING OUR WEBSITE</h2>
+      <p>_____________________________________________________________________________________________________________________________________</p>
+      <p>Copyright © 2023 . All rights reserved</p>
+    </div>
+  </section>
+  <!-- END OF FOOTER -->
+
+</body>
+
+
+
+
+
+
+_____________________________________________________________________________________________________________________________________
+ css:
+
+ 
+*{
+    margin: 0;
+    padding: 0; 
+    
+}
+#none{
+    height: 2em;
+    background-color: #ffffffbd;
+}
+.heading{
+    
+    font-size: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    transform: scale(1,1.3);
+}
+/* Navbar */
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    height: 50px;
+    align-items: center;
+    background-color:rgba(0, 0, 0, 0.404) ;
+    position: relative;
+    top: 0;
+    position: sticky;
+    top: 0;
+    
+}
+.navbar::before{
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin-right: 5em;
+}
+.navbar ul li{
+    font-size: 1.1rem;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+
+}
+.navbar ul li a:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px white;
+}
+.brand a {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+    margin-right: 22em;
+  }
+
+/* Home Section */
+#home{
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    justify-content: center;   
+    background-color: rgba(0, 0, 0, 0.342);
+    color: rgb(255, 255, 255);
+    
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 20%;
+    background:url('91375416_962584594156097_1416217757359276032_n.png');
+    background-position: center;
+    background-size: cover;
+    height: 750px;
+    width: 100%;
+    z-index: -1;
+    
+}
+
+.title-page{
+    
+    font-size: 5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+    transform: scale(1,1.3);
+    transition: 0.5s; /* Animation duration */
+    cursor: pointer; /* Change mouse pointer to indicate clickable area */
+}
+.title-page:hover{
+    background-color: #8bc34a; /* Greenish color on hover */
+    color: black;
+    border-radius: 15px;
+}
+.title-blog{
+    margin-top: 2em;
+}
+.title-blog p{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    margin-top: 28px;
+    text-align: left;
+    margin-left: 1em;
+}
+
+.items-contain{
+  display: flex;
+}
+.title-blog{
+    text-align: left;
+    margin-left: 0;
+    
+}
+.oip{
+    float: left;
+    margin-left: 10px;
+}
+.oip img{
+    height: 15em;    
+}
+.carousel {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    margin-left: 30px;
+
+  }
+  
+  .carousel-inner {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .session {
+    height: 300px;
+    width: 180px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .session:hover {
+    transform: scale(1.1);
+  }
+  
+  .session img {
+    width: 100%;
+    height: 297px;
+    border-radius: 8px;
+  }
+  
+  .session h3 {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  
+  .session p {
+    margin-top: 5px;
+    font-size: 14px;
+  }
+  
+
+/* history */
+#history{
+    display: flex;
+    flex-direction: column;
+    background-color:  rgb(0, 0, 0);
+    height: 750px;
+    width: 100%;
+}
+#history h1{
+    margin: 60px;
+}
+.history{
+    display: grid;
+    grid-template-rows: 1fr auto; /* Divide the container into two rows, with the second row taking the remaining space */
+    height: 200px; /* Set the desired height for the container */
+    background-image: url('uneg.jpeg');
+    background-size: cover;
+    
+
+}
+.history-text{
+    grid-row: 10; /* Place the text in the second row */
+    color: rgb(255, 255, 255);
+    font-size: 6em;
+    margin-bottom: 0;
+    text-align: center;
+}
+.columns{
+    height: 445px;
+    width: 500px;
+    background-color: rgba(162, 187, 162, 0.923);
+    border-radius: 20px;
+    margin: 10px;
+    padding: 50px;
+    border: 4px solid rgb(255, 254, 254);
+}
+.columns p{
+    color: rgb(0, 0, 0);
+    font-size: 1,1rem;
+    margin-bottom: 40px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.pic{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.pic img{
+    width: 500px;
+    height: 400px;
+    padding: 10px;
+    margin:  10px;
+}
+
+
+
+
+/* Footer */
+#footer {
+	background-image: linear-gradient(60deg, #000000 0%, #000000 100%);
+}
+#footer .footer2 {
+	min-height: 200px;
+	padding-top: 50px;
+	padding-bottom: 10px;
+    margin: auto;
+}
+#footer h2 {
+	color: rgb(255, 255, 255);
+	font-weight: 500;
+	font-size: 1.8rem;
+	letter-spacing: 0.1rem;
+    margin: auto;
+    text-align: center;
+}
+
+#footer p {
+	color: rgb(251, 248, 248);
+	font-size: 1.3rem;
+    margin: auto;
+    text-align: center;
+}
+.brand h1{
+    color: white;
+    font-weight: 1000;
+	font-size: 1.8rem;
+	letter-spacing: 0.1rem;
+	margin-top: 5px;
+	margin-bottom: 20px;
+    text-align: center;
+}
+.brand span{
+    color: orange;
+}
+
+
+/* End Footer */
